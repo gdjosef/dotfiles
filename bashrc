@@ -13,6 +13,7 @@
 
 ### EXPORTS
 export TERM="xterm-256color" # proper terminal colors
+export EDITOR="nvim"         # set neovim as default editor
 
 ### SETTING OTHER ENVIRONMENT VARIABLES
 if [ -z "$XDG_CONFIG_HOME" ] ; then
