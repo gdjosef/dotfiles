@@ -43,6 +43,10 @@ PS1='\[\e[38;2;244;164;180m\]\u\[\e[38;2;255;255;255m\]@\[\e[38;2;91;206;250m\]\
 ### SHOPT
 shopt -s cdspell # autocorrects minor cd mispellings (sic)
 
+### ALIASES
+alias xclip="xclip -selection c"
+alias meow="cat"
+
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
 ex ()
