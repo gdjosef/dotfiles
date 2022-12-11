@@ -1,0 +1,41 @@
+env:
+  TERM: xterm-256color
+
+font:
+  normal:
+    family: cozette
+
+  bold:
+    family: cozette
+
+  italic:
+    family: cozette
+
+  size: 11
+
+# color scheme: dark_pastels
+# copied from: https://github.com/eendroroy/alacritty-theme/blob/master/schemes.yaml
+# source: https://invent.kde.org/utilities/konsole/-/blob/master/data/color-schemes/DarkPastels.colorscheme
+colors:
+  primary:
+    #background: '#2C2C2C'
+    background: '#241F31'
+    foreground: '#DCDCCC'
+  normal:
+    black:   '#3F3F3F'
+    red:     '#705050'
+    green:   '#60B48A'
+    yellow:  '#DFAF8F'
+    blue:    '#9AB8D7'
+    magenta: '#DC8CC3'
+    cyan:    '#8CD0D3'
+    white:   '#DCDCCC'
+  bright:
+    black:   '#709080'
+    red:     '#DCA3A3'
+    green:   '#72D5A3'
+    yellow:  '#F0DFAF'
+    blue:    '#94BFF3'
+    magenta: '#EC93D3'
+    cyan:    '#93E0E3'
+    white:   '#FFFFFF'
