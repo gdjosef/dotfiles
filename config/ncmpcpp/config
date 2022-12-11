@@ -544,7 +544,7 @@ fetch_lyrics_for_current_song_in_background = no
 #
 #search_engine_default_search_mode = 1
 #
-#external_editor = nano
+external_editor = nvim
 #
 ## Note: set to yes if external editor is a console application.
 ##

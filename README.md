@@ -24,5 +24,5 @@ yay -S rcm
 ## Credits
 - Derek Taylor's (DistroTube) [.bashrc](https://gitlab.com/dwt1/dotfiles/-/blob/master/.bashrc)
   - ARCHIVE EXTRACTION SCRIPT
-- enby prompt string: [@pilum@octodon.social](https://octodon.social/@pilum) & [@luci@skeletons.gay](https://skeletons.gay/luci) (https://octodon.social/@pilum/109364050993779997) & (https://skeletons.gay/notice/APhg3kERrrDlealSQy)
+- enby prompt string: [@pilum@octodon.social](https://octodon.social/@pilum) ([post](https://octodon.social/@pilum/109364050993779997)) & [@luci@skeletons.gay](https://skeletons.gay/luci) ([post](https://skeletons.gay/notice/APhg3kERrrDlealSQy))
   - PS1 version & original idea, respectively
