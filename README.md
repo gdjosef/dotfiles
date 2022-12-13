@@ -8,6 +8,7 @@ This dotfiles repo is managed using [rcm](https://github.com/thoughtbot/rcm), a 
 
 # Software
 - [`alacritty`](https://alacritty.org/) ...a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration.
+- [`awesome`](https://awesomewm.org/) is a highly configurable, next generation framework window manager for X
 - [`ncmpcpp`](https://rybczak.net/ncmpcpp/) featureful ncurses based MPD client inspired by ncmpc
 - [`nvim`](https://neovim.io/) hyperextensible Vim-based text editor
 
