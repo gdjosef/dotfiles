@@ -130,25 +130,25 @@ local volume = lain.widget.alsa({
 })
 local mpd = lain.widget.mpd({
     settings = function()
-	mpd_notification_preset = {
-   	    title   = "Now playing",
-   	    timeout = 6,
-   	    text    = string.format("%s (%s) - %s\n%s", mpd_now.artist,
-             mpd_now.album, mpd_now.date, mpd_now.title)
-	}
+    	mpd_notification_preset = {
+       	    title   = "Now playing",
+       	    timeout = 6,
+       	    text    = string.format("%s (%s) - %s\n%s", mpd_now.artist,
+                 mpd_now.album, mpd_now.date, mpd_now.title)
+    	}
 
-	if mpd_now.state == "play" then
-            artist = mpd_now.artist .. " > "
-            title  = mpd_now.title
-        elseif mpd_now.state == "pause" then
+        artist = mpd_now.artist .. " > "
+        title  = mpd_now.title  .. " "
+
+        if mpd_now.state == "pause" then
             artist = "mpd "
-            title  = "paused"
-	else
+            title  = "paused "
+        elseif mpd_now.state == "stop" then
             artist = ""
             title  = ""
-	end
+        end
 
-        widget:set_markup(markup.fontfg(beautiful.font, "#EC93D3", artist .. title))
+        widget:set_markup(markup.fontfg(beautiful.font, "#EC93D3", " " .. artist .. title))
     end
 })
 
@@ -219,11 +219,11 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
-    local names = {"www", "term", "music", "files"}
+    awful.tag({ "1", "2", "3", "4", "5" }, s, awful.layout.layouts[1])
+    --local names = {"www", "term", "music", "files"}
     -- local l = awful.layout.suit
     -- local layouts = {l.tile, l.tile, l.tile, l.tile}
-    awful.tag(names, s, awful.layout.layouts[1])
+    --awful.tag(names, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
