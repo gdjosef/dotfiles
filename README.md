@@ -7,10 +7,12 @@ This dotfiles repo is managed using [rcm](https://github.com/thoughtbot/rcm), a 
 **Note**: My `ncmpcpp` config uses `azlyrics` in its `lyrics_fetcher` field which may be non-functional on your version and lead to zero output. I complied `ncmpcpp` from [source](https://github.com/ncmpcpp/ncmpcpp), adding [this pull request](https://github.com/ncmpcpp/ncmpcpp/pull/544)'s additions to make it functional again.
 
 # Software
-- [`alacritty`](https://alacritty.org/) ...a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration.
-- [`awesome`](https://awesomewm.org/) is a highly configurable, next generation framework window manager for X
+- [`alacritty`](https://alacritty.org/) modern terminal emulator that comes with sensible defaults, but allows for extensive configuration.
+- [`awesome`](https://awesomewm.org/) highly configurable, next generation framework window manager for X
 - [`ncmpcpp`](https://rybczak.net/ncmpcpp/) featureful ncurses based MPD client inspired by ncmpc
 - [`nvim`](https://neovim.io/) hyperextensible Vim-based text editor
+- [`picom`](https://github.com/yshui/picom) lightweight compositor for X11
+- [`rofi`](https://github.com/davatorium/rofi) window switcher, application launcher and dmenu replacement
 
 ## Extra
 - [`cozette`](https://github.com/slavfox/Cozette) terminal font, don't forget to install!
@@ -19,8 +21,8 @@ This dotfiles repo is managed using [rcm](https://github.com/thoughtbot/rcm), a 
 1. Clone the repo into `.dotfiles`.
 2. Install `rcm` using your favourite package manager on your respective distro.
 ```bash
-# Arch User Repository with yay helper
-yay -S rcm
+# AUR with paru
+paru -S rcm
 ```
 3. Run `rcup -v` in any directory to create the symlinks needed for the dotfiles.
 4. That's all!

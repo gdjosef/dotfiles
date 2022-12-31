@@ -4,12 +4,7 @@
 #
 # A faily standard .bashrc file, for a standard person like me!
 
-### CREDITS:
-# Derek Taylor's (DistroTube) .bashrc: https://gitlab.com/dwt1/dotfiles/-/blob/master/.bashrc
-# - ARCHIVE EXTRACTION script
-# enby prompt string: @pilum@octodon.social & @luci@skeletons.gay
-# (https://octodon.social/@pilum/109364050993779997) & (https://skeletons.gay/notice/APhg3kERrrDlealSQy)
-# - PS1 version & original idea, respectively
+### CREDITS AT GITHUB.COM/gdjosef/dotfiles
 
 ### EXPORTS
 export TERM="xterm-256color" # proper terminal colors
@@ -40,16 +35,15 @@ alias ls='ls --color=auto'
 # "fixed" with espace chars (\[, \]), use this one to prevent PS1 bash wrapping issues
 #PS1='\[\e[38;2;244;164;180m\]\u\[\e[38;2;255;255;255m\]@\[\e[38;2;91;206;250m\]\h \[\e[38;2;169;13;102m\]\w \[\e[38;2;252;244;52m\]>\[\e[38;2;255;255;255m\]>\[\e[38;2;156;89;209m\]>\[\e[38;2;0;0;0m\]> \[\033[00m\]'
 
-# 16 color compliant
+# the one i actually use
 PS1='\[\e[0;95m\]\u\[\e[0;39m\]@\[\e[0;94m\]\h \[\e[0;92m\]\w \[\033[00m\]\$ '
 
 ### SHOPT
 shopt -s cdspell # autocorrects minor cd mispellings (sic)
 
 ### ALIASES
-alias xclip="xclip -selection c" # quality of life
-alias meow="cat"                 # why not ^w^
-alias sudo="sudo "               # aliases don't work with "sudo" unless this line exits
+alias meow="cat"   # why not ^w^
+alias sudo="sudo " # aliases don't work with "sudo" unless this line exits
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
@@ -91,3 +85,8 @@ esac
 
 # ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
+# doas stuff
+complete -cf doas
+
+# temporary
+uwufetch | queercat -f 1
